@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forme</title>
+</head>
+<body>
+    <form action="" method="get">
+        <label for="name">Ime:</label>
+        <input type="text" name="name" id="name" size="5000" maxlength="5"> <br>
+        <label for="prez">Prezime</label>
+        <input type="text" name="Prezime" id="prez" pattern="[A-Za-z][3]"> <br>
+
+        <label>Izaberi najbolji programski jezik</label> <br>
+        <input type="radio" id="html" name="lan" value="HTML" checked>
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="lan" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="lan" value="JavaScript">
+        <label for="javascript">JavaScript</label> <br>
+        
+        <label>Danas od predmeta imamo:</label> <br>
+        <input type="checkbox" id="pred1" name="pred1" value="HRV">
+        <label for="pred1">Hrvatski</label><br>
+        <input type="checkbox" id="pred2" name="pred2" value="MAT">
+        <label for="pred2">Matematiku</label><br>
+        <input type="checkbox" id="pred3" name="pred3" value="FIZ">
+        <label for="pred3">Fiziku</label> <br>
+
+        <label>Izaberi boju</label>
+        <input type="color"> <br>
+        
+        <label>Izaberi datum</label>
+        <input type="date"> <br>
+
+        <label for="pass">Unesi password</label>
+        <input type="password" name="pass" id="pass"> <br>
+
+        <label for="email">Unesi email</label>
+        <input type="email" name="email" id="email" required> <br>
+
+        <label>Unesi raspon</label>
+        <input type="range" max="2000000000000"> <br>
+        <input type="submit" value="Pošalji"> <br>
+        <input type="reset" value="Poništi"> <br>
+
+        <label for="cars">Choose a car:</label>
+        <select id="cars" name="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+        </select>
+    </form> 
+</body>
+</html>
