@@ -1,0 +1,37 @@
+/* Univerzalni selektor */
+
+*{
+    background-color:lightslategrey;
+}
+/* Element selector */
+
+/* h1{
+    color: olive;
+} */ 
+
+/* Class selector */
+
+.one {
+    color: crimson;
+}
+.two{
+    color: darkmagenta;
+}
+.three{
+    color:lightcoral;
+}
+
+/* Id selector */
+
+#four{
+    color: lavenderblush;
+}
+
+/* Atribute selector */
+
+p[draggable="true"]{
+    color: rebeccapurple;
+}
+p[draggable="false"]{
+    color:gold;
+}
