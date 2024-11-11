@@ -1,37 +1,22 @@
-/* Univerzalni selektor */
-
-*{
-    background-color:lightslategrey;
+#red{
+    color: red;
 }
-/* Element selector */
-
-/* h1{
-    color: olive;
-} */ 
-
-/* Class selector */
-
-.one {
-    color: crimson;
+#blue{
+    color: blue;
 }
-.two{
-    color: darkmagenta;
+#yellow{
+    color: yellow;
 }
-.three{
-    color:lightcoral;
+#green{
+    color: green;
 }
-
-/* Id selector */
-
-#four{
-    color: lavenderblush;
+#orange{
+    color: orange;
 }
-
-/* Atribute selector */
-
-p[draggable="true"]{
-    color: rebeccapurple;
+.color-title{
+    font-weight: normal;
 }
-p[draggable="false"]{
-    color:gold;
+img{
+    height: 200px;
+    width: 200px;
 }
