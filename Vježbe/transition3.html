@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       #tex{
+        position: absolute;
+        left: 430px;
+        top: 120px;
+
+       }
+    
+        #red{
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            position: absolute;
+            transition: transform 2s ease-in-out;
+            left: 300px;
+        }
+        #blu{
+            width: 150px;
+            height: 150px;
+            background-color: blue;
+            position: absolute;
+            top: 158px;
+            left: 300px;
+            transition: transform 2s ease-in-out;
+        }
+        #yel{
+            width: 150px;
+            height: 150px;
+            background-color: yellow;
+            position: absolute;
+            left: 450px;
+            transition: transform 2s ease-in-out;
+        }
+        #gre{
+            width: 150px;
+            height: 150px;
+            background-color: green;
+            position: absolute;
+            left: 450px;
+            top: 158px;
+            transition: transform 2s ease-in-out;
+        }
+        #main:hover #red{
+            transform: rotate(90deg);
+            transform-origin: top left;
+        }
+        #main:hover #blu{
+            transform: rotate(-90deg);
+            transform-origin: bottom left;
+        }
+        #main:hover #yel{
+            transform: rotate(-90deg);
+            transform-origin: top right;
+        }
+        #main:hover #gre{
+            transform: rotate(90deg);
+            transform-origin: bottom right;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <h1 id="tex">Hi!</h1>
+        <div id="red"></div>
+        <div id="blu"></div>
+        <div id="yel"></div>
+        <div id="gre"></div>
+    </div>
+</body>
+</html>
