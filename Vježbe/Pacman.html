@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacman</title>
+    <style>
+        body{
+            background-color: black;
+            margin: 300px;
+        }
+        #pacbody{
+            background-color: gold;
+            height: 220px;
+            width: 220px;
+            border-radius: 50%;   
+            position: absolute;
+            transform: translate(50px);
+
+        }
+        #mouth{
+            height: 0;
+            width: 0;
+            position: absolute;
+            transform: translate(150px, 55px);
+            border-top: 50px solid transparent;
+            border-bottom: 50px solid transparent;
+            border-right: 120px solid black; 
+            
+        }
+        #eye{
+            height: 40px;
+            width: 40px;
+            background-color: black;
+            border-radius: 50%;
+            transform: translate(130px, 20px);
+            position: absolute;
+        }
+        #food1{
+            height: 50px;
+            width: 50px;
+            background-color: yellow;
+            border-radius: 50%;
+            transform: translate(350px, 75px);
+            position: absolute;
+        }
+        #food2{
+            height: 50px;
+            width: 50px;
+            background-color: yellow;
+            border-radius: 50%;
+            position: absolute;
+            transform: translate(550px, 75px);
+        }
+        #ghostbod1{
+            height: 180px;
+            width: 190px;
+            position: absolute;
+            background-color: #ef1b09;
+            transform: translate(700px, 50px);
+        }
+        #ghostbod2{
+            height: 180px;
+            width: 190px;
+            background-color: #ef1b09;
+            position: absolute;
+            transform: translate(700px, -35px);
+            border-radius: 50%;
+        }
+        #ghostbod3{
+            position: absolute;
+            height: 80px;
+            width: 100px;
+            background-color: black;
+            transform: translate(700px, 200px);
+            border-radius: 50%;
+        }
+        #ghostbod4{
+            position: absolute;
+            height: 80px;
+            width: 100px;
+            background-color: black;
+            transform: translate(790px, 200px);
+            border-radius: 50%;
+        }
+        #ghosteye1{
+            background-color: white;
+            height: 100px;
+            width: 80px;
+            position: absolute;
+            transform: translate(705px);
+            border-radius: 50%;
+        }
+        #ghosteye2{
+            background-color: white;
+            height: 100px;
+            width: 80px;
+            position: absolute;
+            transform: translate(805px);
+            border-radius: 50%;
+        }
+        #ghosteye3{
+            background-color: #1a2ecd;
+            height: 30px;
+            width: 30px;
+            position: absolute;
+            transform: translate(805px, 30px);
+            border-radius: 50%;
+
+        }
+        #ghosteye4{
+            background-color: #1a2ecd;
+            height: 30px;
+            width: 30px;
+            position: absolute;
+            transform: translate(705px, 30px);
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div id="pacbody"></div>
+    <div id="mouth"></div>
+    <div id="eye"></div>
+    <div id="food1"></div>
+    <div id="food2"></div>
+    <div id="ghostbod1"></div>
+    <div id="ghostbod2"></div>
+    <div id="ghostbod3"></div>
+    <div id="ghostbod4"></div>
+    <div id="ghosteye1"></div>
+    <div id="ghosteye2"></div>
+    <div id="ghosteye3"></div>
+    <div id="ghosteye4"></div>
+</body>
+</html>
