@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 1000px;
+            background-image: linear-gradient(#d4d8dd,#c0c8ca,#aab7b7,#2e4156,#1a2d42);
+        }
+        #base{
+            width: 500px;
+            height: 600px;
+            position: absolute;
+            top: 30%;
+            left: 35%;
+        }
+        #p{
+            background-color: #1a2d42;
+            width: 425px;
+            height: 150px;
+            border-radius: 150px;
+            position: absolute;
+            top: 20px;
+            left: 30px;
+            box-shadow: 2px -2px 7px darkgrey;
+            transition: transform 500ms cubic-bezier(0.67,-0.55, 0.3, 1.59);
+        }
+        #d{
+            background-color: #2e4156;
+            width: 425px;
+            height: 150px;
+            border-radius: 150px;
+            position: absolute;
+            top: 90px;
+            left: 30px;
+            box-shadow: 2px -2px 7px black;
+            transition: transform 500ms cubic-bezier(0.67,-0.55, 0.3, 1.59);
+        }
+        #t{
+            background-color: #aab7b7;
+            width: 425px;
+            height: 150px;
+            border-radius: 150px;
+            position: absolute;
+            top: 160px;
+            left: 30px;
+            z-index: +1;
+            box-shadow: 2px -2px 7px black;
+            transition: transform 500ms cubic-bezier(0.67,-0.55, 0.3, 1.59);
+        }
+        #c{
+            background-color: #c0c8ca;
+            width: 425px;
+            height: 150px;
+            border-radius: 150px;
+            position: absolute;
+            top: 230px;
+            left: 30px;
+            z-index: +1;
+            box-shadow: 2px -2px 7px black;
+            transition: transform 500ms cubic-bezier(0.67,-0.55, 0.3, 1.59);
+        }
+        #p5{
+            background-color: #d4d8dd;
+            width: 425px;
+            height: 150px;
+            border-radius: 150px;
+            position: absolute;
+            top: 300px;
+            left: 30px;
+            z-index: +1;
+            box-shadow: 2px -2px 7px black;
+            transition: transform 500ms cubic-bezier(0.67,-0.55, 0.3, 1.59);
+        }
+        #pp{
+            color: #afbfcf;
+            font-family: sans-serif;
+            position: absolute;
+            left: 50px;
+        }
+        #pd{
+            color: #afbfcf;
+            font-family: sans-serif;
+            position: absolute;
+            left: 50px;
+        }
+        #pt{
+            color: #303a45;
+            font-family: sans-serif;
+            position: absolute;
+            left: 50px;
+        }
+        #pc{
+            color: #303a45;
+            font-family: sans-serif;
+            position: absolute;
+            left: 50px;
+        }
+        #p5p{
+            color: #303a45;
+            font-family: sans-serif;
+            position: absolute;
+            left: 50px;
+        }
+        #p:hover{
+            transform: translateY(-40px);
+        }
+        #d:hover{
+            transform: translateY(-40px);
+        }
+        #t:hover{
+            transform: translateY(-40px);
+        }
+        #c:hover{
+            transform: translateY(-40px);
+        }
+        #p5:hover{
+            transform: translateY(-40px);
+        }
+    </style>
+</head>
+<body>
+    <div id="base">
+        <div id="p"><p id="pp">#1a2d42</p></div>
+        <div id="d"><p id="pd">#2e4156</p></div>
+        <div id="t"><p id="pt">#aab7b7</p></div>
+        <div id="c"><p id="pc">#c0c8ca</p></div>
+        <div id="p5"><p id="p5p">#d4d8dd</p></div>
+    </div>
+</body>
+</html>
