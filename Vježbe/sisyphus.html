@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sisyphus</title>
+<style>
+    body{
+        background-color: #404456;
+    }
+    #line{
+        position: absolute;
+        height: 5px;
+        width: 130px;
+        background-color: white;
+        left: 40%;
+        top: 40.5%;
+        rotate: -45deg;
+    }
+    #box{
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        border: solid white 4px;
+        border-radius: 10%;
+        background-color: #404456;
+        left: 42%;
+        top: 40.6%;
+        rotate: 45deg;
+        animation-name: walk;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-play-state: running;
+    }
+    @keyframes walk{
+        0%{
+           
+        }
+        20%{
+            transform: translate(0, -1em) rotate(90deg);
+        }
+        40%{
+            transform: translate(0, -2em) rotate(180deg);
+        }
+        60%{
+            transform: translate(0, -3em) rotate(270deg);
+        }
+        80%{
+            transform: translate(0, -4em) rotate(360deg);
+        }
+        100%{
+            
+        }
+    }
+</style>
+</head>
+<body>
+    <div id="line"></div>
+    <div id="box"></div>
+</body>
+</html>
