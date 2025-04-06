@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Zadaća 4 - Slika i vizitka">
+    <meta name="author" content="Luka Šesto">
+    <title>Zadaća 4</title>
+    <style>
+        #container{
+            width: 400px;
+            height: 300px;
+            border: 5px solid black;
+            background-color: #282828;
+            position: relative;
+        }
+        #body{
+            width: 150px;
+            height: 150px;
+            background-color: #FFFFFF;
+            position: absolute;
+            top: 25%;
+            left: 30%;
+            border-radius: 15%;
+            z-index: 2;
+        }
+        #eye{
+            width: 15px;
+            height: 30px;
+            background-color: #282828;
+            border-radius: 50%;
+            position: absolute;
+            top: 20%;
+            left: 75%;
+        }
+        #beak{
+            width: 0px;
+            height: 0px;
+            border-left: solid 50px #F2a73b;
+            border-top: solid transparent 50px;
+            border-bottom: solid transparent 50px;
+            position: absolute;
+            top: 34%;
+            left: 67.5%;
+        }
+        #comb1{
+            width: 30px;
+            height: 30px;
+            background-color: #ea3323;
+            border-top-left-radius: 100%;
+            border-top-right-radius: 100%;
+            position: absolute;
+            top: 20%;
+            left: 52%;
+        }
+        #comb2{
+            width: 23px;
+            height: 25px;
+            background-color: #ea3323;
+            border-top-left-radius: 100%;
+            border-top-right-radius: 100%;
+            position: absolute;
+            top: 21%;
+            left: 43%;
+        }
+        #comb3{
+            width: 13px;
+            height: 15px;
+            background-color: #ea3323;
+            border-top-left-radius: 100%;
+            border-top-right-radius: 100%;
+            position: absolute;
+            top: 23%;
+            left: 37%;
+        }
+        #viz{
+            height: 300px;
+            width: 500px;
+            border: solid black 5px;
+            position: relative;
+        }
+        #pfp{
+            height: 140px;
+            width: 140px;
+            position: absolute;
+            top: 22%;
+            left: 3%;
+        }
+        #name{
+            position: absolute;
+            left: 50%;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+        }
+        #info{
+            width: 250px;
+            text-align: center;
+            position: absolute;
+            left: 40%;
+            top: 25%;
+            margin: 10px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        #contact{
+            width: 230px;
+            text-align: center;
+            margin: 10px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            position: absolute;
+            left: 40%;
+            top: 45%;
+        }
+        #icon1{
+            width: 50px;
+            position: absolute;
+            top: 70%;
+            left: 50%;
+        }
+        #icon2{
+            width: 60px;
+            position: absolute;
+            top: 70%;
+            left: 70%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Zadaća 4</h1>
+    <h2>Zadatak 1</h2>
+    <img src="./zadatakslika.png" alt="Zadatak slika" width="300">
+    <div id="container">
+        <div id="body">
+            <div id="eye"></div>
+        </div>
+        <div id="beak"></div>
+        <div id="comb1"></div>
+        <div id="comb2"></div>
+        <div id="comb3"></div>
+    </div>
+
+    <hr>
+    <br>
+
+    <h2>Zadatak 2</h2>
+    <div id="viz"> 
+        <img id="pfp" src="./profile.png" alt="Profilna slika">
+        <div id="content">
+            <h1 id="name">Luka Šesto</h1>
+            <p id="info"> Učenik Tehničke škole Slavonski Brod. Volim igrice, TV serije i glazbu.</p>
+            <p id="contact">E-mail: lukasesto006@gmail.com Telefon: +386 99 213 4442</p>
+            <img id="icon1" src="./facebook.jpg" alt="Facebook">
+            <img id="icon2" src="./twitter.png" alt="Twitter">
+        </div>
+    </div>
+</body>
+</html>
