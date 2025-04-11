@@ -21,12 +21,12 @@ body{
 .card:hover{
     flex-basis: 35vw;
 }
-@media screen and (max-width: 767px){
+@media only screen and (max-width: 767px){
     .container{
         width: 100%;
     }
 }
-@media screen and (min-width:760px) and (max-width: 991px){
+@media only screen and (min-width:760px) and (max-width: 991px){
     .container{
         width: 100%;
     }
