@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Zadaća 5 - grid i flexbox">
+    <meta name="author" content="Luka Šesto">
+    <title>My page</title>
+    <style>
+        body{
+            background-color: #3A0519;
+            margin: 10px;
+            color: white;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+        }
+        .container{
+            display: grid;
+            width: 100%;
+            background-color: #670D2F;
+            grid-template-columns: 25% 25% 25% 25%;
+            grid-template-rows: 10% 80% 10%;
+            padding: 5px;
+        }
+        .links{
+            display: grid;
+            grid-column: span 4;
+            grid-template-columns: 25% 25% 25% 25%;
+            border: solid black 2px;
+            margin-bottom: 5px;
+        }
+        .link{
+            display: flex;
+            background-color: #A53860;
+            border-right: solid black 2px;
+            align-items: center;
+            justify-content: center;
+        }
+        .a{
+            border-right: solid black 0px;
+        }
+        .main{
+            display: grid;
+            border: solid black 2px;
+            grid-column: span 4;
+            background-color: #A53860;
+            grid-template-columns: 50% 50%;
+            padding: 5px;
+        }
+        .imge{
+            
+        }   
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="links">
+        <div class="link">Link1</div>
+        <div class="link">Link2</div>
+        <div class="link">Link3</div>
+        <div class="link a">Link4</div>
+        </div>
+        <div class="main">
+            <div>
+                <h1>Title</h1>
+                <p>Body text</p>
+            </div>
+            <div >
+                <img class="imge" src="https://elearningchips.com/wp-content/uploads/2017/02/ph_024_043_pw1.jpg" alt="Image">
+            </div>
+            
+        </div>
+        
+    </div>
+</body>
+</html>
