@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Zadaća 5 - grid i flexbox">
     <meta name="author" content="Luka Šesto">
-    <title>Dark Souls</title>
+    <title>FromSoftware</title>
     <style>
         body{
             background-color: #333446;
@@ -15,11 +15,7 @@
             font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
         }
         .container{
-            /* display: grid;
-           
-            background-color: #670D2F;
-             grid-template-columns: 25% 25% 25% 25%;
-            grid-template-rows: 10% 80% 10%; */
+            
             padding: 5px; 
             width: 100%;  
             
@@ -29,36 +25,41 @@
             height: 100px;
             grid-column: span 4;
             grid-template-columns: 25% 25% 25% 25%;
-            border: solid black 2px;
+            border: solid #EAEFEF 2px;
             margin-bottom: 5px;
         }
         .link{
             display: flex;
             background-color: #7F8CAA;
-            border-right: solid black 2px;
+            border-right: solid #EAEFEF 2px;
             align-items: center;
             justify-content: center;
-            font-size: 45px;
+            font-size: 36px;
         }
         .a{
-            border-right: solid black 0px;
+            border-right: solid #EAEFEF 0px;
         }
         .main{
             
             display: grid;
-            border: solid black 2px;
+            border: solid #EAEFEF 2px;
             grid-column: span 4;
             background-color: #7F8CAA;
-            grid-template-columns: 50% 50%;
+            grid-template-columns: 45% 55%;
+            grid-template-rows: 90% 10%;
             padding: 5px;
             gap: 30px;
             height: 1000px;
             
         }
+        .info{
+            grid-row: span 2;
+        }
         .maintext{
             font-size: 23px;
             line-height: 180%;
             padding-left: 2%;
+            
         }
         .imge1{
             object-fit: contain;
@@ -70,9 +71,9 @@
         .imge2{
             object-fit: contain;
             padding-top: 0.5%;
-            padding-left: 9%;
-            width: 100%;
-            height: 70%;
+            padding-left: 15%;
+            width: 80%;
+            height: 80%;
             
         }
         a:link{
@@ -87,22 +88,27 @@
         a:active{
             color: #333446;
         }
+        .sclmed{
+            grid-column: 2;
+            grid-row: 2;
+            padding-left: 40%;
+            
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="links">
-        <div class="link"><a target="_blank" href="/Zadaće/zadaća5a.html">GAMES</a></div>
-        <div class="link"><a target="_blank" href="/Zadaće/zadaća5b.html">HISTORY</a></div>
-        <div class="link"><a target="_blank" href="/Zadaće/zadaća5c.html">SOMETHING</a></div>
-        <div class="link a"><a target="_blank" href="/Zadaće/zadaća5d.html">OFFICIAL WEBSITE</a></div>
+        <div class="link">MAIN PAGE</div>
+        <div class="link"><a href="/Zadaće/zadaća5a.html">GAMES</a></div>
+        <div class="link"><a href="/Zadaće/zadaća5b.html">HISTORY</a></div>
+        <div class="link a"><a target="_blank" href="https://www.fromsoftware.jp/ww/">OFFICIAL WEBSITE</a></div>
         </div>
         <div class="main">
-            <div>
+            <div class="info">
                 <img class="imge1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Fromsoftware_logo.svg/330px-Fromsoftware_logo.svg.png" alt="FromSoftware">
                 <p class="maintext">FromSoftware, Inc. is a Japanese video game developer and publisher. Founded by Naotoshi Zin on November 1, 1986 as a business software developer, the company released their first video game, King's Field, for the PlayStation in 1994. 
                 Its success shifted FromSoftware to focus fully on games, with them producing two more King's Field games before the first release of the mecha shooter series Armored Core in 1997.
-                By the 2000s, FromSoftware's releases included the Echo Night, Shadow Tower, Lost Kingdoms, Otogi, and Another Century's Episode series. 
                 The company achieved breakout success by the 2010s with Demon's Souls and the Dark Souls trilogy of action role-playing games. 
                 Often cited among the greatest video games ever made, their emphasis on high difficulty and environmental storytelling led to the creation of the Soulslike subgenre, which also includes other later FromSoftware titles such as Bloodborne (2015), Sekiro: Shadows Die Twice (2019), and Elden Ring (2022).
                 Hidetaka Miyazaki, creator and director of Dark Souls, has served as FromSoftware's representative director and president since 2014, with Zin remaining as an advisor. 
@@ -110,7 +116,13 @@
                 FromSoftware usually self-publishes in Japan, and has partnered with international publishers, including Agetec, Sony, Bandai Namco Entertainment, Sega, Capcom, Nintendo, and Koch Media.</p>
             </div>
             <div >
-                <img class="imge2" src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8d/Dark_Souls_Cover_Art.jpg/250px-Dark_Souls_Cover_Art.jpg" alt="Image">
+                <img class="imge2" src="https://mgrgaming.com/wp-content/uploads/2024/02/FromSoftware-Unfazed-by-Soulslike-Competition-Focus-Remains-on-Player-Enjoyment_compressed.jpg" alt="Image">
+                <div class="sclmed">
+                <a href="https://www.instagram.com/fromsoftware_jp/?hl=en"><img src="https://cdn-icons-png.flaticon.com/128/4138/4138124.png" alt="instagram"></a>
+                <a href="https://www.facebook.com/fromsoftware.jp/"><img src="https://cdn-icons-png.flaticon.com/128/5968/5968764.png" alt="FaceBook"></a>
+                <a href="https://x.com/fromsoftware_pr?lang=en"><img src="https://cdn-icons-png.flaticon.com/128/5969/5969020.png" alt="Twitter"></a>
+                <a href="https://www.linkedin.com/company/fromsoftware-inc-"><img src="https://cdn-icons-png.flaticon.com/128/4494/4494497.png" alt="LinkedIn"></a>
+            </div>
             </div>
             
         </div>

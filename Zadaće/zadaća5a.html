@@ -3,9 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Zadaća 5a - grid i flexbox">
+    <meta name="author" content="Luka Šesto">
+    <title>Games</title>
+    <style>
+        body{
+            background-color: #333446;
+            margin: 10px;
+            height: 30%;
+            color: white;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+        }
+        .container{
+            
+            padding: 5px; 
+            width: 100%;  
+            
+        }
+        .links{
+            display: grid;
+            height: 100px;
+            grid-column: span 4;
+            grid-template-columns: 25% 25% 25% 25%;
+            border: solid #EAEFEF 2px;
+            margin-bottom: 5px;
+        }
+        .link{
+            display: flex;
+            background-color: #7F8CAA;
+            border-right: solid #EAEFEF 2px;
+            align-items: center;
+            justify-content: center;
+            font-size: 36px;
+        }
+        .a{
+            border-right: solid #EAEFEF 0px;
+        }
+         a:link{
+            color: #333446;
+        }
+        a:hover{
+            color: #333446;
+        }
+        a:visited{
+            color: #333446;
+        }
+        a:active{
+            color: #333446;
+        }
+        .main{
+            
+            display: grid;
+            border: solid #EAEFEF 2px;
+            grid-column: span 4;
+            background-color: #7F8CAA;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: repeat(35,2.7%);
+            padding: 5px;
+            gap: 30px;
+            height: 20000px;
+            
+        }
+        .left{
+            display: flex;
+            grid-column: 0;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+        }
+        .righ{
+            display: flex;
+            grid-column: 2;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+    </style>
 </head>
 <body>
-    
+     <div class="container">
+        <div class="links">
+        <div class="link"><a href="/Zadaće/zadaća5.html">MAIN PAGE</a></div>
+        <div class="link">GAMES</div>
+        <div class="link"><a href="/Zadaće/zadaća5b.html">HISTORY</a></div>
+        <div class="link a"><a target="_blank" href="https://www.fromsoftware.jp/ww/">OFFICIAL WEBSITE</a></div>
+    </div>
+    <div class="main">
+        <div class="left"><a target="_blank" href="https://en.wikipedia.org/wiki/King%27s_Field_(video_game)"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5b/Kingsfield1_cover.jpg/250px-Kingsfield1_cover.jpg" alt="King's Field"></a> <h1>King's Field (1994)</h1></div>
+        <div class="righ"><a target="_blank" href="https://en.wikipedia.org/wiki/King%27s_Field_II"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f0/Kingsfield2_cover1.jpg/250px-Kingsfield2_cover1.jpg" alt="King's Field II"></a> <h1>King's Field II (1995)</h1></div>
+        <div class="left"><a target="_blank" href="https://en.wikipedia.org/wiki/King%27s_Field_III"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a9/Kingsfield3_cover.jpg/250px-Kingsfield3_cover.jpg" alt="King's Field III"></a> <h1>King's Field III (1996)</h1></div>
+        <div class="righ"><a target="_blank" href="https://en.wikipedia.org/wiki/Armored_Core_(video_game)"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/db/ArmoredCorePS1.jpg/250px-ArmoredCorePS1.jpg" alt="Armored Core"></a> <h1>Armored Core(1997)</h1></div>
+        <div class="left"><a target="_blank" href="https://en.wikipedia.org/wiki/Armored_Core:_Project_Phantasma"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8b/Armored_Core_Project_Phantasma.jpg/250px-Armored_Core_Project_Phantasma.jpg" alt="Armored Core: Project Phantasma"></a> <h1>Armored Core: Project Phantasma (1997)</h1></div>
+        <div class="righ"><a target="_blank" href="https://en.wikipedia.org/wiki/Shadow_Tower"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/70/Shadow_tower_box.jpg/250px-Shadow_tower_box.jpg" alt="Shadow Tower"></a> <h1>Shadow Tower (1998)</h1></div>
+        <div class="left"><a target="_blank" href="https://en.wikipedia.org/wiki/Echo_Night_(video_game)"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/10/Echo_Night_cover.png/250px-Echo_Night_cover.png" alt="Echo Night"></a> <h1>Echo Night (1998)</h1></div>
+        <div class="righ"><a target="_blank" href="https://en.wikipedia.org/wiki/Armored_Core:_Master_of_Arena"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/45/Armored_Core_Master_of_Arena_cover.jpg/250px-Armored_Core_Master_of_Arena_cover.jpg" alt="Armored Core: Master of Arena"></a> <h1>Armored Core: Master of Arena (1999)</h1></div>
+        <div class="left"><a target="_blank" href="https://en.wikipedia.org/wiki/Spriggan:_Lunar_Verse"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8d/Spriggan_Lunar_Verse_PSX_Cover.jpg/250px-Spriggan_Lunar_Verse_PSX_Cover.jpg" alt="Spriggan: Lunar Verse"></a> <h1>Spriggan: Lunar Verse (1999)</h1></div>
+        <div class="righ"><a target="_blank" href="https://en.wikipedia.org/wiki/Frame_Gride"><img src="https://upload.wikimedia.org/wikipedia/en/4/47/Frame_Gride.jpg" alt="Frame Gride"></a> <h1>Frame Gride(1999)</h1></div>
+        <div class="left"><a target="_blank" href="https://en.wikipedia.org/wiki/Echo_Night_2:_The_Lord_of_Nightmares"><img src="https://upload.wikimedia.org/wikipedia/en/8/89/Echo_Night_2_-_The_Lord_of_Nightmares_Coverart.png" alt="Echo Night 2: The Lord of Nightmares"></a> <h1>Echo Night 2: The Lord of Nightmares (1999)</h1></div>
+        <div class="righ"><a target="_blank" href="https://en.wikipedia.org/wiki/Eternal_Ring"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/87/EternalRing_front-1-.jpg/250px-EternalRing_front-1-.jpg" alt="Eternal Ring"></a> <h1>Eternal Ring (2000)</h1></div>
+        <div class="left"><a target="_blank" href="https://en.wikipedia.org/wiki/Evergrace"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/40/Evergrace_Coverart.png/250px-Evergrace_Coverart.png" alt="EverGrace"></a> <h1>EverGrace (2000)</h1></div>
+        <div class="righ"><a target="_blank" href="https://en.wikipedia.org/wiki/Armored_Core_2"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/4f/Armored_Core_2_cover_art.jpg/250px-Armored_Core_2_cover_art.jpg" alt="Armored Core 2"></a> <h1>Armored Core 2 (2000)</h1></div>
+        <div class="left"><a target="_blank" href="https://en.wikipedia.org/wiki/The_Adventures_of_Cookie_%26_Cream"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/6d/Cookiecreamps2.PNG/250px-Cookiecreamps2.PNG" alt="The Adventures of Cookie & Cream"></a> <h1>The Adventures of Cookie & Cream (2000)</h1></div>
+        <div class="righ"><a target="_blank" href="https://en.wikipedia.org/wiki/Armored_Core_2:_Another_Age"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Armored_Core_2_-_Another_Age.jpg/250px-Armored_Core_2_-_Another_Age.jpg" alt="Armored Core 2: Another Age"></a> <h1>Armored Core 2: Another Age (2001)</h1></div>
+        <div class="left"><a target="_blank" href="https://en.wikipedia.org/wiki/Forever_Kingdom"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/32/Forever_Kingdom.jpg/250px-Forever_Kingdom.jpg" alt="Forever Kingdom"></a> <h1>Forever Kingdom (2001)</h1></div>
+        <div class="righ"><a target="_blank" href="https://en.wikipedia.org/wiki/King%27s_Field_IV"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/91/King%27s_Field_IV.jpg/250px-King%27s_Field_IV.jpg" alt="King's Field IV"></a> <h1>King's Field IV (2001)</h1></div>
+        <div class="left"><a target="_blank" href="https://en.wikipedia.org/wiki/Armored_Core_3"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Armored_Core_3.jpg/250px-Armored_Core_3.jpg" alt="Armored Core 3"></a> <h1>Armored Core 3 (2002)</h1></div>
+        <div class="righ"><a target="_blank" href="https://en.wikipedia.org/wiki/Lost_Kingdoms"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ab/Lost_Kingdoms.jpg/250px-Lost_Kingdoms.jpg" alt="Lost Kingdoms"></a> <h1>Lost Kingdoms (2002)</h1></div>
+        <div class="left"><a target="_blank" href="https://en.wikipedia.org/wiki/Murakumo:_Renegade_Mech_Pursuit"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/bb/Murakumopursuitcover.jpg/250px-Murakumopursuitcover.jpg" alt="Murakumo: Renegade Mech Pursuit"></a> <h1>Murakumo: Renegade Mech Pursuit (2002)</h1></div>
+        <div class="righ"><a target="_blank" href="https://en.wikipedia.org/wiki/Otogi:_Myth_of_Demons"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e8/Otogi.png/250px-Otogi.png" alt="Otogi: Myth of Demons"></a> <h1>Otogi: Myth of Demons (2002)</h1></div>
+        <div class="left"><a target="_blank" href="https://en.wikipedia.org/wiki/Silent_Line:_Armored_Core"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/72/Silent_Line_-_Armored_Core.jpg/250px-Silent_Line_-_Armored_Core.jpg" alt="Silent Line: Armored Core"></a> <h1>Silent Line: Armored Core (2003)</h1></div>
+        <div class="righ"><a target="_blank" href="https://www.fromsoftware.jp/ww/detail.html?csm=025"><img src="https://media.fromsoftware.jp/fromsoftware/ww/static/img/products/detail/packageimage_xbox/product_25.jpg" alt="Thousand Land"></a> <h1>Thousand Land (2003)</h1></div>
+        <div class="left"><a target="_blank" href="https://en.wikipedia.org/wiki/Lost_Kingdoms_II"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/71/Lost_Kingdoms_II_cover.jpg/250px-Lost_Kingdoms_II_cover.jpg" alt="Lost Kingdoms II"></a> <h1>Lost Kingdoms II (2003)</h1></div>
+        <div class="righ"><a target="_blank" href="https://en.wikipedia.org/wiki/Shadow_Tower_Abyss"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/01/Shadow_Tower_Abyss.jpg/250px-Shadow_Tower_Abyss.jpg" alt="Shadow Tower Abyss"></a> <h1>Shadow Tower Abyss (2003)</h1></div>
+        <div class="left"><a target="_blank" href="https://en.wikipedia.org/wiki/Otogi_2:_Immortal_Warriors"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/Otogi_2_-_Immortal_Warriors_Coverart.png/250px-Otogi_2_-_Immortal_Warriors_Coverart.png" alt="Otogi 2: Immortal Warriors"></a> <h1>Otogi 2: Immortal Warriors</h1></div>
+        <div class="righ"><a target="_blank" href="https://en.wikipedia.org/wiki/Echo_Night:_Beyond"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c7/Echo_Night_-_Beyond_Coverart.png/250px-Echo_Night_-_Beyond_Coverart.png" alt="Echo Night: Beyond"></a> <h1>Echo Night: Beyond (2004)</h1></div>
+        <div class="left"><a target="_blank" href="https://en.wikipedia.org/wiki/Armored_Core:_Nexus"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/6a/Armored_Core_-_Nexus_cover.jpg/250px-Armored_Core_-_Nexus_cover.jpg" alt="Armored Core: Nexus"></a> <h1>Armored Core: Nexus (2004)</h1></div>
+        <div class="righ"><a target="_blank" href="https://en.wikipedia.org/wiki/Kuon"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/db/Kuon_NA_cover.jpg/250px-Kuon_NA_cover.jpg" alt="Kuon"></a> <h1>Kuon (2004)</h1></div>
+        <div class="left"><a target="_blank" href="https://en.wikipedia.org/wiki/Armored_Core:_Nine_Breaker"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/de/Armored_Core_-_Nine_Breaker.jpg/250px-Armored_Core_-_Nine_Breaker.jpg" alt="Armored Core: Nine Breaker"></a> <h1>Armored Core: Nine Breaker (2004)</h1></div>
+        <div class="righ"><a target="_blank" href="https://en.wikipedia.org/wiki/Armored_Core:_Formula_Front"><img src="https://upload.wikimedia.org/wikipedia/en/d/d2/PSPArmoredCoreFomulaOneFrontCover.jpg" alt="Armored Core: Formula Front"></a> <h1>Armored Core: Formula Front (2004)</h1></div>
+        <div class="left"><a target="_blank" href="https://en.wikipedia.org/wiki/Metal_Wolf_Chaos"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e3/Metal_Wolf_Chaos_cover.png/250px-Metal_Wolf_Chaos_cover.png" alt="Metal Wolf Chaos"></a> <h1>Metal Wolf Chaos (2004)</h1></div>
+        <div class="righ"><a target="_blank" href="https://en.wikipedia.org/wiki/Yoshitsune_Eiy%C5%ABden:_The_Story_of_Hero_Yoshitsune"><img src="https://upload.wikimedia.org/wikipedia/en/f/f3/Yoshitsune_Eiy%C5%ABden.png" alt="Yoshitsune Eiyūden: The Story of Hero Yoshitsune"></a> <h1>Yoshitsune Eiyūden: The Story of Hero Yoshitsune (2005)</h1></div>
+        <div class="left"><a target="_blank" href="https://en.wikipedia.org/wiki/Another_Century%27s_Episode"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/22/Another_Century%27s_Episode_Coverart.png/250px-Another_Century%27s_Episode_Coverart.png" alt="Another Century's Episode"></a> <h1>Another Century's Episode (2005)</h1></div>
+        <div class="righ"><a target="_blank" href="https://en.wikipedia.org/wiki/Armored_Core:_Last_Raven"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/1d/Armored_Core_-_Last_Raven.jpg/250px-Armored_Core_-_Last_Raven.jpg" alt="Armored Core: Last Raven"></a> <h1>Armored Core: Last Raven (2005)</h1></div>
+        <div class="left"><a target="_blank" href="https://en.wikipedia.org/wiki/Enchanted_Arms"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8d/Enchantarm.jpg/250px-Enchantarm.jpg" alt="Enchanted Arms"></a> <h1>Enchanted Arms (2006)</h1></div>
+        <div class="righ"><a target="_blank" href="https://en.wikipedia.org/wiki/Another_Century%27s_Episode_2"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9b/Another_Century%27s_Episode_2_Coverart.png/250px-Another_Century%27s_Episode_2_Coverart.png" alt="Another Century's Episode 2"></a> <h1>Another Century's Episode 2 (2006)</h1></div>
+        <div class="left"><a target="_blank" href="https://en.wikipedia.org/wiki/Chromehounds"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3c/Chromehounds.jpg/250px-Chromehounds.jpg" alt="Chromehounds"></a> <h1>Chromehounds (2006)</h1></div>
+        <div class="righ"><a target="_blank" href="https://www.fromsoftware.jp/ww/detail.html?csm=050"><img src="https://media.fromsoftware.jp/fromsoftware/ww/static/img/products/detail/packageimage_psp/product_50.jpg" alt="KING'S FIELD ADDITIONAL Ⅰ"></a> <h1>KING'S FIELD ADDITIONAL I (2006)</h1></div>
+        <div class="left"><a target="_blank" href="https://www.fromsoftware.jp/ww/detail.html?csm=051"><img src="https://media.fromsoftware.jp/fromsoftware/ww/static/img/products/detail/packageimage_psp/product_51.jpg" alt="KING'S FIELD ADDITIONAL Ⅱ"></a> <h1>KING'S FIELD ADDITIONAL Ⅱ (2006)</h1></div>
+        <div class="righ"><a target="_blank" href="https://en.wikipedia.org/wiki/Armored_Core_4"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/69/Armored_Core_4.jpg/250px-Armored_Core_4.jpg" alt="Armored Core 4"></a> <h1>Armored Core 4 (2006)</h1></div>
+        <div class="left"><a target="_blank" href="https://www.fromsoftware.jp/ww/detail.html?csm=057"><img src="https://media.fromsoftware.jp/fromsoftware/ww/static/img/products/detail/packageimage_ds/product_57.jpg" alt="NANPURE VOW"></a> <h1>NANPURE VOW (2007)</h1></div>
+        <div class="righ"><a target="_blank" href="https://www.fromsoftware.jp/ww/detail.html?csm=058"><img src="https://media.fromsoftware.jp/fromsoftware/ww/static/img/products/detail/packageimage_ds/product_58.jpg" alt="IRAROJI VOW"></a> <h1>IRAROJI VOW (2007)</h1></div>
+        <div class="left"><a target="_blank" href="https://en.wikipedia.org/wiki/Another_Century%27s_Episode_3:_The_Final"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e0/Another_Century%27s_Episode_3_-_The_Final_Coverart.png/250px-Another_Century%27s_Episode_3_-_The_Final_Coverart.png" alt="Another Century's Episode 3: The Final"></a> <h1>Another Century's Episode 3: The Final (2007)</h1></div>
+        <div class="righ"><a target="_blank" href="https://en.wikipedia.org/wiki/Armored_Core:_For_Answer"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/29/Armored_Core_for_Answer_cover_art.PNG/250px-Armored_Core_for_Answer_cover_art.PNG" alt="Armored Core: For Answer"></a> <h1>Armored Core: For Answer (2008)</h1></div>
+        <div class="left"><a target="_blank" href="https://en.wikipedia.org/wiki/Shadow_Assault:_Tenchu"><img src="https://upload.wikimedia.org/wikipedia/en/5/5b/Shadowassaulttenchucover.jpg" alt="Shadow Assault: Tenchu"></a> <h1>Shadow Assault: Tenchu (2008)</h1></div>
+        <div class="righ"><a target="_blank" href="https://www.fromsoftware.jp/ww/detail.html?csm=068"><img src="https://media.fromsoftware.jp/fromsoftware/ww/static/img/products/detail/packageimage_ds/product_68.jpg" alt="INUGAMI-KE NO ICHIZOKU"></a> <h1>INUGAMI-KE NO ICHIZOKU (2009)</h1></div>
+        <div class="left"><a target="_blank" href="https://en.wikipedia.org/wiki/Ninja_Blade"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d5/Ninja_Blade.jpg/250px-Ninja_Blade.jpg" alt="Ninja Blade"></a> <h1>Ninja Blade (2009)</h1></div>
+        <div class="righ"><a target="_blank" href="https://en.wikipedia.org/wiki/Demon%27s_Souls"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/91/Demon%27s_Souls_Cover.jpg/250px-Demon%27s_Souls_Cover.jpg" alt="Demon's Souls"></a> <h1>Demon's Souls (2009)</h1></div>
+        <div class="left"><a target="_blank" href="https://www.fromsoftware.jp/ww/detail.html?csm=072"><img src="https://media.fromsoftware.jp/fromsoftware/ww/static/img/products/detail/packageimage_ds/product_72.jpg" alt="YATSUHAKA-MURA"></a> <h1>YATSUHAKA-MURA (2009)</h1></div>
+        <div class="righ"><a target="_blank" href="https://en.wikipedia.org/wiki/Another_Century%27s_Episode:_R"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f5/Another_Century_Episode_R_Cover.jpg/250px-Another_Century_Episode_R_Cover.jpg" alt="Another Century's Episode: R"></a> <h1>Another Century's Episode: R (2010)</h1></div>
+        <div class="left"><a target="_blank" href="https://en.wikipedia.org/wiki/Monster_Hunter_Diary"><img src="https://upload.wikimedia.org/wikipedia/en/8/8e/Monster_Hunter_Diary_Poka_Poka_Airu_Village_Cover_Art.jpg" alt="Monster Hunter Diary"></a> <h1>Monster Hunter Diary (2010)</h1></div>
+        <div class="righ"><a target="_blank" href="https://en.wikipedia.org/wiki/Another_Century%27s_Episode_Portable"><img src="https://upload.wikimedia.org/wikipedia/en/4/43/Another_Century_Portable.jpg" alt="Another Century's Episode Portable"></a> <h1>Another Century's Episode Portable (2011)</h1></div>
+        <div class="left"><a target="_blank" href="https://en.wikipedia.org/wiki/Dark_Souls_(video_game)"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8d/Dark_Souls_Cover_Art.jpg/250px-Dark_Souls_Cover_Art.jpg" alt="Dark Souls"></a> <h1>Dark Souls (2011)</h1></div>
+        <div class="righ"><a target="_blank" href="https://en.wikipedia.org/wiki/Armored_Core_V"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/64/Armored_Core_V_cover.png/250px-Armored_Core_V_cover.png" alt="Armored Core V"></a> <h1>Armored Core V (2012)</h1></div>
+        <div class="left"><a target="_blank" href="https://en.wikipedia.org/wiki/Mobile_Suit_Gundam_Unicorn_(video_game)"><img src="https://upload.wikimedia.org/wikipedia/en/1/14/Mobile_Suit_Gundam_Unicorn_VG_Cover_Art.png" alt="Mobile Suit Gundam Unicorn"></a> <h1>Mobile Suit Gundam Unicorn (2012)</h1></div>
+        <div class="righ"><a target="_blank" href="https://en.wikipedia.org/wiki/Steel_Battalion:_Heavy_Armor"><img src="https://upload.wikimedia.org/wikipedia/en/d/d7/SteelBattalionHeavyArmor.jpg" alt="Steel Battalion: Heavy Armor"></a> <h1>Steel Battalion: Heavy Armor (2012)</h1></div>
+        <div class="left"><a target="_blank" href="https://en.wikipedia.org/wiki/Armored_Core:_Verdict_Day"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/74/Armored_Core_Verdict_Day_cover.jpg/250px-Armored_Core_Verdict_Day_cover.jpg" alt="Armored Core: Verdict Day"></a> <h1>Armored Core: Verdict Day (2013)</h1></div>
+        <div class="righ"><a target="_blank" href="https://en.wikipedia.org/wiki/Dark_Souls_II"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/ed/Dark_Souls_II_cover.jpg/250px-Dark_Souls_II_cover.jpg" alt="Dark Souls II"></a> <h1>Dark Souls II (2014)</h1></div>
+        <div class="left"><a target="_blank" href="https://en.wikipedia.org/wiki/Dark_Souls_II:_Scholar_of_the_First_Sin"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/ed/Dark_Souls_II_cover.jpg/250px-Dark_Souls_II_cover.jpg" alt="Dark Souls II: Scholar of the First Sin"></a> <h1>Dark Souls II: Scholar of the First Sin (2015)</h1></div>
+        <div class="righ"><a target="_blank" href="https://en.wikipedia.org/wiki/Bloodborne"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/68/Bloodborne_Cover_Wallpaper.jpg/250px-Bloodborne_Cover_Wallpaper.jpg" alt="Bloodborne"></a> <h1>Bloodborne (2015)</h1></div>
+        <div class="left"><a target="_blank" href="https://en.wikipedia.org/wiki/Dark_Souls_III"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/bb/Dark_souls_3_cover_art.jpg/250px-Dark_souls_3_cover_art.jpg" alt="Dark Souls III"></a> <h1>Dark Souls III (2016)</h1></div>
+        <div class="righ"><a target="_blank" href="https://en.wikipedia.org/wiki/D%C3%A9racin%C3%A9"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c9/Derecine_artwork.jpg/250px-Derecine_artwork.jpg" alt="Déraciné"></a> <h1>Déraciné (2018)</h1></div>
+        <div class="left"><a target="_blank" href="https://en.wikipedia.org/wiki/Sekiro:_Shadows_Die_Twice"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/6e/Sekiro_art.jpg/250px-Sekiro_art.jpg" alt="Sekiro: Shadows Die Twice"></a> <h1>Sekiro: Shadows Die Twice (2019)</h1></div>
+        <div class="righ"><a target="_blank" href="https://en.wikipedia.org/wiki/Elden_Ring"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b9/Elden_Ring_Box_art.jpg/250px-Elden_Ring_Box_art.jpg" alt="Elden Ring"></a> <h1>Elden Ring</h1></div>
+        <div class="left"><a target="_blank" href="https://en.wikipedia.org/wiki/Armored_Core_VI:_Fires_of_Rubicon"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/89/Armored_Core_VI_Fires_of_Rubicon_cover_art.jpg/250px-Armored_Core_VI_Fires_of_Rubicon_cover_art.jpg" alt="Armored Core VI: Fires of Rubicon"></a> <h1>Armored Core VI: Fires of Rubicon (2023)</h1></div>
+        <div class="righ"><a target="_blank" href="https://en.wikipedia.org/wiki/Elden_Ring_Nightreign"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f0/Elden_Ring_Nightreign_cover_art.png/250px-Elden_Ring_Nightreign_cover_art.png" alt="Elden Ring Nightreign"></a> <h1>Elden Ring Nightreign (2025)</h1></div>
+        <div class="left"><a target="_blank" href="https://en.wikipedia.org/wiki/The_Duskbloods"><img src="" alt="The Duskbloods"></a> <h1>The Duskbloods (2026?)</h1></div>
+        
+    </div>
 </body>
 </html>
